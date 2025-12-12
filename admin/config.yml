@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-# Enable for local testing (disable in production)
-local_backend: true
+# Set to true for local testing, false for production
+local_backend: false
 
 media_folder: "src/images"
 public_folder: "/images"
