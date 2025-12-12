@@ -1,0 +1,29 @@
+<section id="about" class="py-24 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <p class="text-coffee-500 text-sm uppercase tracking-widest mb-4 font-semibold">{{ site.sectionTitles.aboutSubtitle }}</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-coffee-800 mb-6 leading-tight">{{ site.sectionTitles.about }}</h2>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">{{ site.description }}</p>
+        {% if site.highlights %}
+        <div class="flex gap-8">
+          {% for highlight in site.highlights %}
+          <div>
+            <p class="text-3xl font-display font-bold text-coffee-600">{{ highlight.value }}</p>
+            <p class="text-gray-500 text-sm">{{ highlight.label }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="lg:w-1/2">
+        <div class="relative">
+          <div class="w-full h-80 bg-gradient-to-br from-coffee-200 to-coffee-300 rounded-2xl"></div>
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-coffee-600 rounded-2xl flex items-center justify-center">
+            <span class="text-4xl">{{ site.services[0].icon if site.services[0].icon else "☕" }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

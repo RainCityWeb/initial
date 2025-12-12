@@ -1,0 +1,22 @@
+<section id="hero" class="relative bg-gradient-to-br from-coffee-700 via-coffee-600 to-coffee-800 text-white text-center py-32 px-4 min-h-[70vh] flex items-center justify-center overflow-hidden">
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-coffee-300 rounded-full blur-3xl"></div>
+  </div>
+  
+  <div class="relative max-w-2xl">
+    <p class="text-coffee-200 text-sm uppercase tracking-widest mb-4 font-medium">{{ site.welcomeText }}</p>
+    <h1 class="text-5xl md:text-7xl font-display font-bold mb-6 text-shadow leading-tight">{{ site.businessName }}</h1>
+    <p class="text-xl md:text-2xl text-coffee-100 mb-10 leading-relaxed">{{ site.tagline }}</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-white text-coffee-800 px-8 py-4 rounded-full font-semibold text-lg hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+        <span>{{ site.cta.primary }}</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <a href="#about" class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300">
+        {{ site.cta.secondary }}
+      </a>
+    </div>
+  </div>
+</section>

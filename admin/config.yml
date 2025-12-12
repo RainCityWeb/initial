@@ -1,0 +1,114 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Enable for local testing (disable in production)
+local_backend: true
+
+media_folder: "src/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Business Information"
+        file: "src/_data/site.json"
+        fields:
+          # Basic Info
+          - { label: "Business Name", name: "businessName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Welcome Text", name: "welcomeText", widget: "string", default: "Welcome to", hint: "Text shown above business name in hero" }
+          - { label: "About/Description", name: "description", widget: "text" }
+          - { label: "Google Analytics ID", name: "ga", widget: "string", required: false, hint: "e.g., G-XXXXXXXXXX" }
+          
+          # Highlights (optional)
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            required: false
+            hint: "Optional highlights to show in About section (e.g., '24/7 Service', 'Family Owned')"
+            fields:
+              - { label: "Value", name: "value", widget: "string", hint: "e.g., 9+ or 24/7" }
+              - { label: "Label", name: "label", widget: "string", hint: "e.g., Years Serving" }
+          
+          # Services
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string", required: false, hint: "e.g., ☕ 🥐 🔧" }
+          
+          # Opening Hours
+          - label: "Opening Hours"
+            name: "hours"
+            widget: "object"
+            fields:
+              - { label: "Monday", name: "monday", widget: "string" }
+              - { label: "Tuesday", name: "tuesday", widget: "string" }
+              - { label: "Wednesday", name: "wednesday", widget: "string" }
+              - { label: "Thursday", name: "thursday", widget: "string" }
+              - { label: "Friday", name: "friday", widget: "string" }
+              - { label: "Saturday", name: "saturday", widget: "string" }
+              - { label: "Sunday", name: "sunday", widget: "string" }
+          - { label: "Hours Description", name: "hoursTagline", widget: "text", hint: "Friendly message about opening hours" }
+          
+          # Location
+          - label: "Location"
+            name: "location"
+            widget: "object"
+            fields:
+              - { label: "Street Address", name: "address", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "ZIP Code", name: "zip", widget: "string" }
+              - { label: "Google Maps Embed URL", name: "mapEmbedUrl", widget: "string", hint: "Get this from Google Maps > Share > Embed" }
+          
+          # Contact
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Contact Description", name: "tagline", widget: "text", hint: "Message shown in contact section" }
+              - { label: "Availability", name: "availability", widget: "string", hint: "e.g., Open 7 days a week" }
+          
+          # Footer
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string", hint: "e.g., Made with ☕" }
+          
+          # CTAs
+          - label: "Call to Action Buttons"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Primary Button", name: "primary", widget: "string", default: "Get in Touch" }
+              - { label: "Secondary Button", name: "secondary", widget: "string", default: "Learn More" }
+          
+          # Section Titles
+          - label: "Section Titles"
+            name: "sectionTitles"
+            widget: "object"
+            collapsed: true
+            hint: "Customize section headings and subtitles"
+            fields:
+              - { label: "About Title", name: "about", widget: "string", default: "About Us" }
+              - { label: "About Subtitle", name: "aboutSubtitle", widget: "string", default: "Our Story" }
+              - { label: "Services Title", name: "services", widget: "string", default: "Our Services" }
+              - { label: "Services Subtitle", name: "servicesSubtitle", widget: "string", default: "What We Offer" }
+              - { label: "Hours Title", name: "hours", widget: "string", default: "Opening Hours" }
+              - { label: "Hours Subtitle", name: "hoursSubtitle", widget: "string", default: "Plan Your Visit" }
+              - { label: "Location Title", name: "location", widget: "string", default: "Find Us" }
+              - { label: "Location Subtitle", name: "locationSubtitle", widget: "string", default: "Come Visit" }
+              - { label: "Contact Title", name: "contact", widget: "string", default: "Contact Us" }
+              - { label: "Contact Subtitle", name: "contactSubtitle", widget: "string", default: "Get in Touch" }

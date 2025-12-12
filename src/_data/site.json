@@ -1,0 +1,88 @@
+{
+  "contact": {
+    "phone": "(555) 123-4567",
+    "email": "hello@sunrisecoffee.example",
+    "instagram": "https://instagram.com/sunrisecoffee",
+    "facebook": "https://facebook.com/sunrisecoffee",
+    "tagline": "Have a question or just want to say hello? We'd love to hear from you.",
+    "availability": "Open 7 days a week"
+  },
+  "sectionTitles": {
+    "contact": "Contact Us",
+    "aboutSubtitle": "Our Story",
+    "hoursSubtitle": "Plan Your Visit",
+    "locationSubtitle": "Come Visit",
+    "about": "About Us",
+    "hours": "Opening Hours",
+    "location": "Find Us",
+    "servicesSubtitle": "What We Offer",
+    "contactSubtitle": "Get in Touch",
+    "services": "Our Services"
+  },
+  "businessName": "Sunrise Coffee Waheyyy!",
+  "tagline": "Your neighborhood coffee shop since 2015",
+  "hours": {
+    "monday": "7:00 AM - 6:00 PM",
+    "tuesday": "7:00 AM - 6:00 PM",
+    "wednesday": "7:00 AM - 6:00 PM",
+    "thursday": "7:00 AM - 6:00 PM",
+    "friday": "7:00 AM - 8:00 PM",
+    "saturday": "8:00 AM - 8:00 PM",
+    "sunday": "8:00 AM - 4:00 PM"
+  },
+  "welcomeText": "Welcome to",
+  "cta": {
+    "primary": "Get in Touch",
+    "secondary": "Learn More"
+  },
+  "location": {
+    "address": "123 Main Street",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.5!2d-89.65!3d39.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ2JzQ4LjAiTiA4OcKwMzknMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+  },
+  "ga": "",
+  "footer": {
+    "tagline": "Made with ☕",
+    "year": "2024"
+  },
+  "description": "We serve locally roasted coffee, fresh pastries, and light bites in a warm, welcoming atmosphere.",
+  "services": [
+    {
+      "name": "Specialty Coffee",
+      "description": "Locally roasted, expertly crafted espresso drinks and pour-overs",
+      "icon": "☕"
+    },
+    {
+      "name": "Fresh Pastries",
+      "description": "Baked daily — croissants, muffins, and seasonal treats",
+      "icon": "🥐"
+    },
+    {
+      "name": "Light Bites",
+      "description": "Sandwiches, salads, and toasties made to order",
+      "icon": "🥪"
+    },
+    {
+      "name": "Free WiFi",
+      "description": "Work remotely or catch up with friends",
+      "icon": "📶"
+    }
+  ],
+  "hoursTagline": "We're open every day to serve you the perfect cup. Stop by and experience the warmth of our community.",
+  "highlights": [
+    {
+      "value": "9+",
+      "label": "Years Serving"
+    },
+    {
+      "value": "10k+",
+      "label": "Happy Customers"
+    },
+    {
+      "value": "15+",
+      "label": "Coffee Varieties"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@source "../**/*.njk";
+@source "../**/*.html";
+
+/* Custom color theme - adjusted for WCAG contrast */
+@theme {
+    --color-coffee-50: #FFFAF5;
+    --color-coffee-100: #FFF5EB;
+    --color-coffee-200: #D4B896;
+    --color-coffee-300: #B8956A;
+    --color-coffee-400: #9C7A50;
+    --color-coffee-500: #7D5C35;
+    --color-coffee-600: #6B4423;
+    --color-coffee-700: #5A3818;
+    --color-coffee-800: #4A2D10;
+    --color-coffee-900: #3D1E08;
+    --color-accent: #1A4023;
+    --color-accent-light: #2C5530;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Custom utilities */
+@layer utilities {
+    .font-display {
+        font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .font-body {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .backdrop-blur-light {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nice selection color */
+::selection {
+    background-color: #D4A574;
+    color: #3D1E08;
+}
