@@ -1,6 +1,6 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Passthrough copy for static assets
-  eleventyConfig.addPassthroughCopy("src/css");
+  // Note: CSS is handled by Tailwind CLI, not passthrough
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("admin");
